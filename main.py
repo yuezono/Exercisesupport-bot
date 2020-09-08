@@ -44,7 +44,7 @@ users = {}
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     userId = event.source.user_id
-    movie_list = [("https://youtu.be/fuMOxAZOlLI","サムネイルurl"),"https://youtu.be/1fI8eAhd95k","https://youtu.be/qSsUM4Ffi70","https://youtu.be/G6zdi88y95w","https://youtu.be/qkAfmttfW3o","https://youtu.be/LdpVTj1t9M0","https://youtu.be/KxzZJwmB8qc","https://youtu.be/tMS7SWB0H8E"]
+    movie_list = ["https://youtu.be/fuMOxAZOlLI","https://youtu.be/1fI8eAhd95k","https://youtu.be/qSsUM4Ffi70","https://youtu.be/G6zdi88y95w","https://youtu.be/qkAfmttfW3o","https://youtu.be/LdpVTj1t9M0","https://youtu.be/KxzZJwmB8qc","https://youtu.be/tMS7SWB0H8E"]
     movie_text = "本日のおすすめはこちらです。" + random.choice(movie_list)
     hagemashi = ["今日も体を動かしましょう！","応援しているよ！！","一緒に頑張ろう","負けないで！！"]
     if "開始" in event.message.text:
